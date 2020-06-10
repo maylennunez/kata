@@ -86,3 +86,25 @@ count++;
 
    console.log(output)
 }
+
+
+
+   // WHO'S BUYING LUNCH?//
+   
+Write a function which will select a random name from a list of names. The person selected will have to pay for everybody's food bill.
+
+Example input
+["Angela", "Ben", "Jenny", "Michael", "Chloe"]
+
+Output
+Michael is going to buy lunch today!
+
+
+function whosPaying(names) {
+
+var numberOfPeople = names.lenght;
+var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+var randomPerson = names[randonPersonPosition];
+
+return randomPerson + "is going to buy lunch today!";
+}

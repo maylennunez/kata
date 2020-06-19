@@ -1,0 +1,54 @@
+// Higher Order Function Challenge 
+
+
+function add(num1, num2) {
+return num1 + num2;
+}
+ 
+function subtract(num1, num2) {
+return num1 - num2;
+}
+ 
+function multiply(num1, num2) {
+return num1 * num2;
+}
+ 
+function divide(num1, num2) {
+return num1 / num2;
+}
+ 
+function calculator(num1, num2, operator) {
+return operator(num1, num2);
+}
+
+calculator(3,3, multiply)
+calculator(3,2, add)
+calculator(3,2, subtract)
+calculator(3,2, divide);
+
+
+// Create Objects //
+
+// var houseKeeper1 = {
+// yearsOfExperience: 1;
+// name: "Laura";
+// cleaningRepertoire:["bath","lobby","bedroom"];
+
+// }
+// var houseKeeper2 = {
+// yearsOfExperience: 3;
+// name: "Jane";
+// cleaningRepertoire:["lobby","bedroom"];
+
+// }
+
+// Constructor function // name have to be capitalized - first letter('H'ouseKeeper)
+
+function HouseKeeper (yearsOfExperience, name, cleaningRepertoire ) {
+  this.yearsOfExperience = yearsOfExperience;
+  this.name = name;
+  this.cleaningRepertoire = cleaningRepertoire;
+}
+
+var houseKeeper1 = new HouseKeeper(9,"Tom",["bath","lobby"] );
+console.log(houseKeeper1.name);

@@ -195,3 +195,20 @@ function getScore(arr) {
 
   return score;
 }
+
+
+
+
+var points = [40, 100, 300, 46]
+
+function myArrayMax(arr) {
+  var len = arr.length;
+  var max = -Infinity;
+  while (len--) {
+    if (arr[len] > max) {
+      max = arr[len];
+    }
+  }
+  return max;
+}
+

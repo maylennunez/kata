@@ -6,3 +6,15 @@ function getMiddle(string) {
     return string.charAt(middleIndex);
   }
 }
+
+// The trim method removes whitespaces from both ends of a string.//
+var input = ' Rosa Parks ';
+var name = input.trim();
+name contains the string 'Rosa Parks'. Notice that input still contains the string ' Rosa Parks '.
+Exercise
+
+Write a function firstChar, which returns the first character that is not a space when a string is passed. firstChar(' Rosa Parks ') should return 'R'.
+var firstChar = function(text) {
+  var trimmedText = text.trim();
+  return trimmedText.charAt(0);
+};

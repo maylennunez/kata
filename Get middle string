@@ -36,3 +36,17 @@ var indexOfIgnoreCase = function(s1, s2) {
   return s1Lower.indexOf(s2Lower);
 };
 
+
+// Write a function toFahrenheit that converts a temperature from Celsius to Fahrenheit. If C is the temperature in Celsius and F the temperature in Fahrenheit, the following applies: F = 1.8 * C + 32. toFahrenheit(0) should return 32.//
+var toFahrenheit = function(celsius) {
+  return 1.8 * celsius + 32;
+};
+
+
+// Write a function midrange, that calculates the midrange of 3 numbers. The midrange is the mean of the smallest and largest number. midrange(3, 9, 1) should return (9+1)/2 = 5.//
+
+var midrange = function(a, b, c) {
+  var min = Math.min(a, b, c);
+  var max = Math.max(a, b, c);
+  return (min + max) / 2;
+};

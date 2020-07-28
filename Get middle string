@@ -48,5 +48,21 @@ var toFahrenheit = function(celsius) {
 var midrange = function(a, b, c) {
   var min = Math.min(a, b, c);
   var max = Math.max(a, b, c);
-  return (min + max) / 2;
+  return (min + max) 
+
+/ String: toUpperCase()
+
+In addition to the length property, strings have methods. These are functions that are applied to the string. Like the length property, these methods are appended with a point to the string or to a variable that contains a string. The arguments enclosed in parentheses follow. Two of these string methods are the parameterless methods toUpperCase and toLowerCase. They return the string in uppercase or lowercase.
+var town = 'Mthatha';
+var output = town.toUpperCase();
+output has the value 'MTHATHA'. town still has the value 'Mthatha'.
+output = town.toLowerCase();
+Now output has the value 'mthatha'.
+Exercise
+
+Write a function toCase that takes a string and returns that string in lowercase and uppercase with - as delimiter. toCase('Mthatha') should return 'mthatha-MTHATHA'.
+
+
+var toCase = function(text) {
+  return text.toLowerCase() + '-' + text.toUpperCase();
 };

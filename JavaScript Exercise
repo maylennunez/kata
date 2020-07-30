@@ -307,3 +307,12 @@ var add = function(s) {
   return summand1 + summand2;
 };
 
+
+function scrollingText(text){
+ // return ["GOOD LUCK!","OOD LUCK!G"...]
+ //let arr=[];
+ text=text.toUpperCase();
+ return text.toUpperCase().split('').map((_,i)=> text.slice(i)+text.slice(0,i));
+ 
+ }
+scrollingText("abc")
